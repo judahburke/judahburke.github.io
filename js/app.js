@@ -1,8 +1,8 @@
 function updateCopywrite() {
-    const el = document.getElementsByClassName('judah copywrite');
-    const year = new Date().getFullYear();
+    const el = document.getElementsByClassName('judah copy-year');
+    const year = new Date().getFullYear().toString();
     for (let i = 0; i < el.length; i++) {
-        el[i].innerHTML = `Judah Burke &copy; ${year}`;
+        el[i].innerHTML = year;
     }
 }
 

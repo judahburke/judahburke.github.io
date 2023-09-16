@@ -3,15 +3,15 @@
     --default-text: #777;
     --title-text: #777;
     --header-text: #111;
-    --message-text: #000;
+    --opaque-back: #111;
+    --opaque-text: #fff;
+    --clear-back: transparent;
+    --clear-text: #f7f7f7;
+    --clear-text-alt: #fff;
     --lighter-text: #777;
     --lighter-back: whitesmoke;
     --darker-text: #ddd;
-    --darker-back: #282e34;
-    --opaque-back: #fff;
-    --opaque-text: #111;
-    --clear-back: transparent;
-    --clear-text: #f7f7f7;
+    --darker-back: #282E34;
 }
 
 body, html {
@@ -26,11 +26,9 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
     font: 20px 'Raleway', sans-serif;
     color:var(--header-text);
-}
-
-.judah.head {
     text-align: center;
 }
+
 
 .judah.parallax {
     position: relative;
@@ -46,12 +44,11 @@ h1, h2, h3, h4, h5, h6 {
 .judah.parallax.snow {
     background-image: url("../media/snow.jpg");
 }
-.judah.parallax.me {
+.judah.parallax.self {
     background-image: url("../media/judah.jpg");
 }
 .judah.parallax.sunset {
     background-image: url("../media/sunset.jpg");
-    opacity: 0.65;
 }
 .judah.parallax.rain {
     background-image: url("../media/rain.jpg");
@@ -71,15 +68,7 @@ h1, h2, h3, h4, h5, h6 {
     clear: both;
     display: table;
 }
-.judah.content.lighter {
-    color: var(--lighter-text);
-    background-color: var(--lighter-back);
-}
-.judah.content.darker {
-    color: var(--darker-text);
-    background-color: var(--darker-back);
-}
-.judah.flex-box {
+.judah.flex {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -87,7 +76,7 @@ h1, h2, h3, h4, h5, h6 {
     align-content: center;
     align-items: center;
 }
-.judah.flex-item {
+.judah.flex-square {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -98,14 +87,6 @@ h1, h2, h3, h4, h5, h6 {
     width: 10rem;
     padding: 15px;
     margin: 15px;
-}
-.judah.flex-item.lighter {
-    color: var(--lighter-text);
-    background-color: var(--lighter-back);
-}
-.judah.flex-item.darker {
-    color: var(--darker-text);
-    background-color: var(--darker-back);
 }
 .judah.article {
     display: flex;
@@ -130,29 +111,43 @@ h1, h2, h3, h4, h5, h6 {
     left: 0;
     top: 50%;
     width: 100%;
-    color: var(--message-text);
     text-align: center;
+    font-size: 25px;
+    letter-spacing: 10px;
 }
 .judah.copywrite {
     position: absolute;
     bottom: .5rem;
     right: .5rem;
     width: 100%;
-    color: var(--default-text);
+    font-size:10px;
     text-align: right;
 }
 .judah.text {
     padding: 18px;
-    font-size: 25px;
-    letter-spacing: 10px;
 }
-.judah.text.opaque {
+.judah.dim {
+    opacity: 0.75;
+}
+.judah.opaque {
     background-color: var(--opaque-back);
     color: var(--opaque-text);
 }
-.judah.text.clear {
+.judah.clear {
     background-color: var(--clear-back);
     color: var(--clear-text)
+}
+.judah.clear-alt {
+    background-color: var(--clear-back);
+    color: var(--clear-text-alt)
+}
+.judah.darker {
+    background-color: var(--darker-back);
+    color: var(--darker-text);
+}
+.judah.lighter {
+    background-color: var(--lighter-back);
+    color: var(--lighter-text);
 }
 
 
@@ -171,26 +166,23 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --default-text: #aaa;
-        --title-text: #aaa;
-        --header-text: #777;
-        --message-text: #111;
-        --lighter-back: #111;
-        --lighter-text: #ccc;
-        --darker-back: #282e34;
-        --darker-text: #999;
-        --opaque-back: #181e14;
-        --opaque-text: #ccc;
+        --default-text: #777;
+        --title-text: #777;
+        --header-text: #ccc;
+        --opaque-back: #111;
+        --opaque-text: #fff;
         --clear-back: transparent;
-        --clear-text: #c7c7c7;
+        --clear-text: #f7f7f7;
+        --clear-text-alt: #fff;
+        --lighter-text: #aaa;
+        --lighter-back: #111;
+        --darker-text: #ddd;
+        --darker-back: #282E34;
     }
     body, html {
         font: 400 15px/1.8 'Raleway', sans-serif;
     }
     h1, h2, h3, h4, h5, h6 {
         font: 20px 'Raleway', sans-serif;
-    }
-    .judah.parallax.me {
-        filter: brightness(.6);
-    }
+    } 
   }
