@@ -121,6 +121,14 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--message-text);
     text-align: center;
 }
+.judah.copywrite {
+    position: absolute;
+    bottom: .5rem;
+    right: .5rem;
+    width: 100%;
+    color: var(--default-text);
+    text-align: right;
+}
 .judah.text {
     padding: 18px;
     font-size: 25px;
