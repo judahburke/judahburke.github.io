@@ -144,16 +144,16 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --default-text: #777;
-        --title-text: #777;
-        --header-text: #111;
-        --message-text: #000;
-        --lighter-text: #777;
-        --lighter-back: #ddd;
-        --darker-text: #999;
+        --default-text: #aaa;
+        --title-text: #aaa;
+        --header-text: #777;
+        --message-text: #111;
+        --lighter-back: #222;
+        --lighter-text: #ccc;
         --darker-back: #282e34;
-        --opaque-back: #ddd;
-        --opaque-text: #111;
+        --darker-text: #999;
+        --opaque-back: #181e14;
+        --opaque-text: #fff;
         --clear-back: transparent;
         --clear-text: #c7c7c7;
     }
