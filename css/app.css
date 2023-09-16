@@ -81,11 +81,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 .judah.flex-box {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
-    padding: 15px;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
 }
 .judah.flex-item {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     justify-items: center;
     align-content: center;
@@ -94,6 +98,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 10rem;
     color: var(--lighter-text);
     padding: 15px;
+    margin: 15px;
     background-color: var(--lighter-back);
 }
 .judah.logo {
