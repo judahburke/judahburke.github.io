@@ -64,7 +64,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .judah.content {
     padding: 50px 80px;
-    text-align: justify;
+    text-align: left;
 }
 .judah.content::after {
     content: "";
@@ -107,6 +107,18 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--darker-text);
     background-color: var(--darker-back);
 }
+.judah.article {
+    display: flex;
+    align-items:center;
+}
+.judah.profile {
+    margin: 1rem;
+    width: 10rem;
+    height: 10rem;
+}
+.judah.description {
+    width: 100%;
+}
 .judah.logo {
     display: block;
     margin-left: auto;
@@ -147,6 +159,13 @@ h1, h2, h3, h4, h5, h6 {
 @media only screen and (max-device-width: 1366px) {
     .judah.parallax {
         background-attachment: scroll;
+    }
+}
+
+@media (max-width: 800px) {
+    .judah.article{
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
 
