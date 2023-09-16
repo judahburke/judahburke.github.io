@@ -96,10 +96,16 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
     height: 10rem;
     width: 10rem;
-    color: var(--lighter-text);
     padding: 15px;
     margin: 15px;
+}
+.judah.flex-item.lighter {
+    color: var(--lighter-text);
     background-color: var(--lighter-back);
+}
+.judah.flex-item.darker {
+    color: var(--darker-text);
+    background-color: var(--darker-back);
 }
 .judah.logo {
     display: block;
@@ -143,13 +149,13 @@ h1, h2, h3, h4, h5, h6 {
         --header-text: #111;
         --message-text: #000;
         --lighter-text: #777;
-        --lighter-back: white;
-        --darker-text: #ddd;
+        --lighter-back: #ddd;
+        --darker-text: #999;
         --darker-back: #282e34;
-        --opaque-back: #fff;
+        --opaque-back: #ddd;
         --opaque-text: #111;
         --clear-back: transparent;
-        --clear-text: #f7f7f7;
+        --clear-text: #c7c7c7;
     }
     body, html {
         font: 400 15px/1.8 'Raleway', sans-serif;
