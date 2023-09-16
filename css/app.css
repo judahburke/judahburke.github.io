@@ -5,7 +5,7 @@
     --header-text: #111;
     --message-text: #000;
     --lighter-text: #777;
-    --lighter-back: white;
+    --lighter-back: whitesmoke;
     --darker-text: #ddd;
     --darker-back: #282e34;
     --opaque-back: #fff;
@@ -34,7 +34,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .judah.parallax {
     position: relative;
-    opacity: 0.65;
     height: 100%;
     background-attachment: fixed;
     background-position: center;
@@ -52,6 +51,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .judah.parallax.sunset {
     background-image: url("../media/sunset.jpg");
+    opacity: 0.65;
 }
 .judah.parallax.rain {
     background-image: url("../media/rain.jpg");
@@ -175,12 +175,12 @@ h1, h2, h3, h4, h5, h6 {
         --title-text: #aaa;
         --header-text: #777;
         --message-text: #111;
-        --lighter-back: #222;
+        --lighter-back: #111;
         --lighter-text: #ccc;
         --darker-back: #282e34;
         --darker-text: #999;
         --opaque-back: #181e14;
-        --opaque-text: #fff;
+        --opaque-text: #ccc;
         --clear-back: transparent;
         --clear-text: #c7c7c7;
     }
@@ -189,5 +189,8 @@ h1, h2, h3, h4, h5, h6 {
     }
     h1, h2, h3, h4, h5, h6 {
         font: 20px 'Raleway', sans-serif;
+    }
+    .judah.parallax.me {
+        filter: brightness(.6);
     }
   }
