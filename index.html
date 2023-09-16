@@ -2,61 +2,85 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Judah's Dashboard</title>
-  <meta name="description" content="">
-  <meta name="author" content="">
+  <meta name="description" content="Landing page for Judah Burke">
+  <meta name="author" content="Judah Burke">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway:400,300,600"> -->
-  <script src="https://kit.fontawesome.com/2f85e86a90.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-  <link rel="stylesheet" href="css/base.css">
-  <link rel="icon" type="image/png" href="img/archer-32.png">
+  <link rel="stylesheet" type="text/css" href="css/app.css">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway:400,300,600">
+  <link rel="icon" type="image/png" href="media/archer-32.png">
+  <title>Judah's Splash Page</title>
 </head>
 <body>
-  <section class="hero is-fullheight">
-    <div class="hero-head">
-      <nav class="navbar">
-        <div class="navbar-brand">
-          <a class="navbar-item">
-            <img src="./img/archer-256.png">
-          </a>
-        </div>
-        <div class="navbar-end">
-          <a class="navbar-item" href="https://judahburke.github.io/esoteric-card-vue">
-            <span class="icon">
-              <i class="fas fa-stream"></i>
-            </span>
-            <span>Esoteric Cards</span>
-          </a>
-          <a class="navbar-item" href="https://github.com/judahburke">
-            <span class="icon">
-              <i class="fab fa-github"></i>
-            </span>
-            <span>GitHub</span>
-          </a>
-          <!-- <a class="navbar-item" href="https://animatingstoat.deviantart.com">
-            <span class="icon">
-              <i class="fab fa-deviantart"></i>
-            </span>
-            <span>AnimatingStoat</span>
-          </a> -->
-        </div>
-      </nav>
+  <div class="judah parallax sunset">
+    <div class="judah message">
+      <span class="judah text opaque">WELCOME IN</span>
     </div>
-    <div class="hero-body fire-background">
-      <div class="">
-        <p class="title has-text-white-ter">Judah's Dashboard</p>
-        <p class="subtitle">Links to all the things</p>
+  </div>
+
+  <div class="judah content lighter">
+    <h3 class="judah head">Page Goals</h3>
+    <p>Hello and welcome aboard. My name is Judah Burke. I am a software engineer with over six years of experience, especially in back-end .NET development. I have less experience in database querying, scripting and web development. This landing page will take you to my source control, deployed applications, and contact information. I hope you enjoy your time here and look forward to working with you or reading your feedback.</p>
+    <p><i>This page is hosted with GitHub Pages using the Raleway google font. All images are my own with the exception of the <a href="https://github.com/logos">GitHub</a> and <a href="https://brand.linkedin.com/policies">LinkedIn</a> icons.</i></p>
+  </div>
+
+  <div class="judah parallax rain">
+    <div class="judah message">
+      <span class="judah text clear">CODE & APPS</span>
+    </div>
+  </div>
+
+  <div class="judah relative">
+    <div class="judah content darker">
+      <div class="judah flex-box">
+        <!-- esoteric cards project -->
+        <div class="judah flex-item">
+          <a href="https://judahburke.github.io/esoteric-card-vue">
+            <img class="judah logo" src="media/card.png" alt="See my Card Game Web App">
+          </a>
+          <label>Card Game</label>
+        </div>
+        <!-- github page -->
+        <div class="judah flex-item">
+          <a href="https://github.com/judahburke">
+            <img class="judah logo" src="media/third-party/github-mark/github-mark.png" alt="See my GitHub Profile">
+          </a>
+          <label>GitHub Profile</label>
+        </div>
+        <!-- placeholder for other projects -->
+        <div class="judah flex-item">
+          <a href="">
+            <img class="judah logo" src="media/archer-256.png" alt="Something's cooking">
+          </a>
+          <span>Stay Tuned</span>
+        </div>
       </div>
     </div>
-    <div class="hero-foot">
-      <nav class="level">
-        <div class="level-item">&copy;AnimatedStoat 2022</div>
-        <div class="level-item"><a href="http://bulma.io">
-          <img src="./img/made-with-bulma.png" alt="Made with Bulma" width="128" height="24">
-        </a></div>
-      </nav>
+  </div>
+
+  <div class="judah parallax me">
+    <div class="judah message">
+      <span class="judah text clear">CONTACT INFORMATION</span>
     </div>
-  </section>
+  </div>
+
+  <div class="judah relative">
+    <div class="judah content darker">
+      <div class="judah flex-box">
+        <!-- linked in contact -->
+        <div class="judah flex-item">
+          <a href="https://www.linkedin.com/in/judah-burke-5949a0113/">
+            <img class="judah logo" src="media/third-party/In-Blue-Logo.png.original.png" alt="See my LinkedIn Profile">
+          </a>
+          <label>LinkedIn Profile</label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="judah parallax dawn">
+    <div class="judah message">
+      <span class="judah text opaque">Sl&aacute;n!</span>
+    </div>
+  </div>
 </body>
 </html>

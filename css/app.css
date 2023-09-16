@@ -1,0 +1,155 @@
+:root {
+    color-scheme: light dark;
+    --default-text: #777;
+    --title-text: #777;
+    --header-text: #111;
+    --message-text: #000;
+    --lighter-text: #777;
+    --lighter-back: white;
+    --darker-text: #ddd;
+    --darker-back: #282e34;
+    --opaque-back: #fff;
+    --opaque-text: #111;
+    --clear-back: transparent;
+    --clear-text: #f7f7f7;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font: 400 15px/1.8 'Raleway', sans-serif;
+    color:var(--default-text);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font: 20px 'Raleway', sans-serif;
+    color:var(--header-text);
+}
+
+.judah.head {
+    text-align: center;
+}
+
+.judah.parallax {
+    position: relative;
+    opacity: 0.65;
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.judah.parallax.fire {
+    background-image: url("../media/fire.jpg");
+}
+.judah.parallax.snow {
+    background-image: url("../media/snow.jpg");
+}
+.judah.parallax.me {
+    background-image: url("../media/judah.jpg");
+}
+.judah.parallax.sunset {
+    background-image: url("../media/sunset.jpg");
+}
+.judah.parallax.rain {
+    background-image: url("../media/rain.jpg");
+}
+.judah.parallax.dawn {
+    background-image: url("../media/dawn.jpg");
+}
+.judah.relative {
+    position: relative;
+}
+.judah.content {
+    padding: 50px 80px;
+    text-align: justify;
+}
+.judah.content::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.judah.content.lighter {
+    color: var(--lighter-text);
+    background-color: var(--lighter-back);
+}
+.judah.content.darker {
+    color: var(--darker-text);
+    background-color: var(--darker-back);
+}
+.judah.flex-box {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 15px;
+}
+.judah.flex-item {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    height: 10rem;
+    width: 10rem;
+    color: var(--lighter-text);
+    padding: 15px;
+    background-color: var(--lighter-back);
+}
+.judah.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+.judah.message {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    color: var(--message-text);
+    text-align: center;
+}
+.judah.text {
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+}
+.judah.text.opaque {
+    background-color: var(--opaque-back);
+    color: var(--opaque-text);
+}
+.judah.text.clear {
+    background-color: var(--clear-back);
+    color: var(--clear-text)
+}
+
+
+@media only screen and (max-device-width: 1366px) {
+    .judah.parallax {
+        background-attachment: scroll;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --default-text: #777;
+        --title-text: #777;
+        --header-text: #111;
+        --message-text: #000;
+        --lighter-text: #777;
+        --lighter-back: white;
+        --darker-text: #ddd;
+        --darker-back: #282e34;
+        --opaque-back: #fff;
+        --opaque-text: #111;
+        --clear-back: transparent;
+        --clear-text: #f7f7f7;
+    }
+    body, html {
+        font: 400 15px/1.8 'Raleway', sans-serif;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        font: 20px 'Raleway', sans-serif;
+    }
+  }
