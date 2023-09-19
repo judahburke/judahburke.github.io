@@ -12,6 +12,8 @@
     --lighter-back: whitesmoke;
     --darker-text: #ddd;
     --darker-back: #282E34;
+    --darker-alt-text: #252729;
+    --darker-alt-back: #585a5f;
 }
 
 body, html {
@@ -19,6 +21,9 @@ body, html {
     margin: 0;
     font: 400 15px/1.8 'Raleway', sans-serif;
     color:var(--default-text);
+}
+html {
+    scroll-behavior: smooth
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -29,6 +34,9 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
 }
 
+.judah.nodecor {
+    text-decoration: none !important;
+}
 
 .judah.parallax {
     position: relative;
@@ -50,8 +58,11 @@ h1, h2, h3, h4, h5, h6 {
 .judah.parallax.sunset {
     background-image: url("../media/sunset.jpg");
 }
+.judah.parallax.nyc {
+    background-image: url("../media/nyc.jpg");
+}
 .judah.parallax.rain {
-    background-image: url("../media/rain.jpg");
+    background-image: url("../media/rain-warm.jpg");
 }
 .judah.parallax.dawn {
     background-image: url("../media/dawn.jpg");
@@ -145,6 +156,10 @@ h1, h2, h3, h4, h5, h6 {
     background-color: var(--darker-back);
     color: var(--darker-text);
 }
+.judah.darker-alt {
+    background-color: var(--darker-alt-back);
+    color: var(--darker-alt-text);
+}
 .judah.lighter {
     background-color: var(--lighter-back);
     color: var(--lighter-text);
@@ -178,6 +193,8 @@ h1, h2, h3, h4, h5, h6 {
         --lighter-back: #111;
         --darker-text: #ddd;
         --darker-back: #282E34;
+        --darker-alt-text: #aaa;
+        --darker-alt-back: #111;
     }
     body, html {
         font: 400 15px/1.8 'Raleway', sans-serif;

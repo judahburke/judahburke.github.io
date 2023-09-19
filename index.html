@@ -12,77 +12,33 @@
   <title>Judah's Splash Page</title>
 </head>
 <body>
-  <div class="judah parallax sunset dim">
-    <div class="judah message">
-      <span class="judah text opaque">WELCOME IN</span>
-    </div>
+  <div id="welcome" class="judah parallax sunset dim">
+    <h1 class="judah message">
+      <a class="judah nodecor" href="#goals">
+        <span class="judah text opaque">WELCOME IN</span>
+      </a>
+    </h1>
     <div class="judah copywrite clear">
       Judah Burke &copy; <span class="judah copy-year">2023</span>, West End Sunset in Dallas, TX
     </div>
   </div>
 
-  <div class="judah content lighter">
+  <div id="goals" class="judah content lighter">
     <h3>Page Goals</h3>
     <div class="judah article">
       <img class="judah profile" src="media/judah-profile.jpg" alt="Profile photo">
       <div >
         <p>Hello and welcome aboard. My name is Judah Burke. I am a software engineer with over six years of experience, especially in back-end .NET development. I have additional experience in web development, linux management, cloud architecture and database integration.</p>
-        <p>This landing page will take you to my open source projects, deployed and in progress, and contact information. I hope you enjoy your time here and look forward to working with you or reading your feedback.</p>
+        <p>This landing page will take you to my <a href="#code">open source projects</a>, deployed and in progress, and <a href="#contact">contact information</a>. I hope you enjoy your time here and look forward to working with you or reading your feedback.</p>
         <p><i>This page is hosted with <a href="https://pages.github.com/">GitHub Pages</a> using the <a href="https://fonts.google.com/specimen/Raleway">Raleway</a> font. All images are my own with the exception of the <a href="https://github.com/logos">GitHub</a> and <a href="https://brand.linkedin.com/policies">LinkedIn</a> icons.</i></p>
       </div>
     </div>
   </div>
 
-  <div class="judah parallax rain">
-    <div class="judah message">
-      <span class="judah text clear">CODE & APPS</span>
-    </div>
-    <div class="judah copywrite clear">
-      Judah Burke &copy; <span class="judah copy-year">2023</span>, Car Window Raindrops
-    </div>
-  </div>
-
-  <div class="judah relative">
-    <div class="judah content darker">
-      <div class="judah flex">
-        <!-- esoteric cards project -->
-        <div class="judah flex-square lighter">
-          <a href="https://judahburke.github.io/esoteric-card-vue">
-            <picture>
-              <source srcset="media/card-white.png" media="(prefers-color-scheme: dark)">
-              <img class="judah logo" src="media/card-gh.png" alt="See my Card Game Web App">
-            </picture>
-          </a>
-          <label>Card Game</label>
-        </div>
-        <!-- github page -->
-        <div class="judah flex-square lighter">
-          <a href="https://github.com/judahburke">
-            <picture>
-              <source srcset="media/third-party/github-mark/github-mark-white.png" media="(prefers-color-scheme: dark)">
-              <img class="judah logo" src="media/third-party/github-mark/github-mark.png" alt="See my GitHub Profile">
-            </picture>
-          </a>
-          <label>GitHub Profile</label>
-        </div>
-        <!-- placeholder for other projects -->
-        <div class="judah flex-square lighter">
-          <a href="">
-            <picture>
-              <source srcset="media/archer-256.png" media="(prefers-color-scheme: dark)">
-              <img class="judah logo" src="media/archer-256.png" alt="Something's cooking">
-            </picture>
-          </a>
-          <span>Stay Tuned</span>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="judah parallax self">
-    <div class="judah message">
+  <div id="contact" class="judah parallax self">
+    <h2 class="judah message">
       <span class="judah text clear-alt">CONTACT INFORMATION</span>
-    </div>
+    </h2>
     <div class="judah copywrite clear-alt">
       Judah Burke &copy; <span class="judah copy-year">2023</span>, Grand Canyon, AZ
     </div>
@@ -92,7 +48,7 @@
     <div class="judah content darker">
       <div class="judah flex">
         <!-- linked in contact -->
-        <div class="judah flex-square lighter">
+        <div class="judah flex-square darker-alt">
           <a href="https://www.linkedin.com/in/judah-burke-5949a0113/">
             <picture>
               <source srcset="media/third-party/In-Blue-Logo.png.original.png" media="(prefers-color-scheme: dark)">
@@ -105,10 +61,56 @@
     </div>
   </div>
 
-  <div class="judah parallax dawn dim">
-    <div class="judah message">
-      <span class="judah text opaque">Sl&aacute;n!</span>
+  <div id="code" class="judah parallax nyc">
+    <h2 class="judah message">
+      <span class="judah text clear">CODE & APPS</span>
+    </h2>
+    <div class="judah copywrite clear">
+      Judah Burke &copy; <span class="judah copy-year">2023</span>, New York, NY
     </div>
+  </div>
+
+  <div class="judah relative">
+    <div class="judah content darker">
+      <div class="judah flex">
+        <!-- esoteric cards project -->
+        <div class="judah flex-square darker-alt">
+          <a href="https://judahburke.github.io/esoteric-card-vue">
+            <picture>
+              <source srcset="media/card-white.png" media="(prefers-color-scheme: dark)">
+              <img class="judah logo" src="media/card-gh.png" alt="See my Card Game Web App">
+            </picture>
+          </a>
+          <label>Card Game</label>
+        </div>
+        <!-- github page -->
+        <div class="judah flex-square darker-alt">
+          <a href="https://github.com/judahburke">
+            <picture>
+              <source srcset="media/third-party/github-mark/github-mark-white.png" media="(prefers-color-scheme: dark)">
+              <img class="judah logo" src="media/third-party/github-mark/github-mark.png" alt="See my GitHub Profile">
+            </picture>
+          </a>
+          <label>GitHub Profile</label>
+        </div>
+        <!-- placeholder for other projects -->
+        <div class="judah flex-square darker-alt">
+          <a href="">
+            <picture>
+              <source srcset="media/archer-256.png" media="(prefers-color-scheme: dark)">
+              <img class="judah logo" src="media/archer-256.png" alt="Something's cooking">
+            </picture>
+          </a>
+          <span>Stay Tuned</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="slan" class="judah parallax dawn dim">
+    <h2 class="judah message">
+      <span class="judah text opaque">Sl&aacute;n!</span>
+    </h2>
     <div class="judah copywrite clear">
       Judah Burke &copy; <span class="judah copy-year">2023</span>, Dawn in Hubbardton, VT
     </div>
